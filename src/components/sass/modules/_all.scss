@@ -1,0 +1,11 @@
+//Atoms
+@import '../../../components/atoms/Buttons/Buttons.scss',
+'../../../components/atoms/Change/Change.scss',
+'../../../components/atoms/InputResult/InputResult.scss';
+
+//Organisms
+@import '../../../components/organisms/Header/Header.scss',
+'../../../components/organisms/MenuOptions/MenuOptions.scss';
+
+//Scenes
+@import '../../scenes/Calculator/Calculator.scss';
