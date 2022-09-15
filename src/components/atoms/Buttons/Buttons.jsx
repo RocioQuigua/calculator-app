@@ -1,35 +1,33 @@
 import React from 'react';
 
-import { Button } from 'antd';
+import './Buttons.scss';
 
 export const Buttons = () => {
   return(
     <div className='buttons'>
       <div className='buttons__numbers'>
-      <Button>7</Button>
-      <Button>8</Button>
-      <Button>9</Button>
-      <Button>4</Button>
-      <Button>5</Button>
-      <Button>6</Button>
-      <Button>1</Button>
-      <Button>2</Button>
-      <Button>3</Button>
+        <button>7</button>
+        <button>4</button>
+        <button>1</button>
+        <button>.</button>
+        <button>8</button>
+        <button>5</button>
+        <button>2</button>
+        <button>0</button>
+        <button>9</button>
+        <button>6</button>
+        <button>3</button>
+        <button>/</button>
       </div>
       <div className='buttons__operations'>
-      <Button>DEL</Button>
-      <Button>+</Button>
-      <Button>-</Button>
-      <Button>X</Button>
-      </div>
-      <div className='buttons__operation'>
-      <Button>.</Button>
-      <Button>0</Button>
-      <Button>/</Button>
+      <button>DEL</button>
+      <button>+</button>
+      <button>-</button>
+      <button>X</button>
       </div>
       <div className='buttons__options'>
-      <Button>RESET</Button>
-      <Button>=</Button>
+      <button>RESET</button>
+      <button>=</button>
       </div>
     </div>
   );

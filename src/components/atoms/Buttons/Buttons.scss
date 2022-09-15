@@ -1,11 +1,29 @@
 .buttons {
+  background-color: red;
+  padding: 15px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 230px 60px;
+  place-content: center;  
   &__numbers {
-    border: 1px solid red;
-    border-radius: 5px;
     display: grid;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 40px 40px 40px 40px;
     grid-auto-columns: 60px;
     grid-auto-flow: column;
-    gap: 5px;
+    gap: 15px;
+  }
+  &__operations {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-auto-columns: 60px;
+    gap: 15px;
+  }
+  &__options {
+    display: grid;
+    grid-auto-columns: 20vh;
+    grid-auto-flow: column;
+    height: 36px;
+    gap: 15px;
+    padding-top: 15px;
   }
 }
