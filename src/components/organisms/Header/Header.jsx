@@ -1,10 +1,11 @@
 import React from 'react';
-import { Change } from '../../atoms/Change/Change';
+import { SwitchTheme } from '../../organisms/SwitchTheme/SwitchTheme';
 
 export const Header = () => {
   return (
     <div className='header'>
-      <Change />
+      <h1>calc</h1>
+      <SwitchTheme themes={3}/>
     </div>
   );
 };

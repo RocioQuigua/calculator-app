@@ -1,0 +1,24 @@
+.switch-theme {
+  display: flex;
+  font-family: $font-family;
+  color: $color-white;
+  font-weight: 700;
+  height: 14vh;
+  &__content {
+    margin-right: 2vh;
+  }
+  &__numbers {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 2px;
+    height: 4.5vh;
+  }
+  h1 {
+    font-weight: 700;
+    color: $color-white;
+    font-size: small;
+    margin-top: 6vh;
+  }
+}
