@@ -1,0 +1,12 @@
+//Atoms
+@import '../../components/atoms/ButtonCustom/ButtonCustom.scss',
+'../../components/atoms/Switch/Switch.scss';
+
+//Organisms
+@import '../../components/organisms/Header/Header.scss',
+'../../components/organisms/InputResult/InputResult.scss',
+'../../components/organisms/KeyboardCalculator/KeyboardCalculator.scss',
+'../../components/organisms/SwitchTheme/SwitchTheme.scss';
+
+//Scenes
+@import '../../scenes/Calculator/Calculator.scss';
