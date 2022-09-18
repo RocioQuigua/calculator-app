@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { InputResult } from '../../components/organisms/InputResult/InputResul';
+import { InputResult } from '../../components/organisms/InputResult/InputResult';
 import { Header } from '../../components/organisms/Header/Header';
 import { KeyboardCalculator } from '../../components/organisms/KeyboardCalculator/KeyboardCalculator';
 
