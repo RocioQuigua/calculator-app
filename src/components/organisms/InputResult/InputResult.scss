@@ -1,10 +1,18 @@
-.inputResult {
-    display: flex;
-    place-content: center;
-    height: 70px;
+.input-result {
+    height: 100px;
+    background-color: $color-dark-main;
+    font-family: $font-family;
+    font-size: $font-size-numbers;
     input {
-      background-color: hsl(224, 36%, 15%);
-      border-radius: 5px;
+      display: block;
+      text-align: end;
+      font-weight: 700;
+      width: 100%;
+      height: 70px;
+      background-color: $color-dark-screen;
+      border-radius: 8px;
       border-style: none;
+      color: $color-white;
+      outline: none;
     }
 }
