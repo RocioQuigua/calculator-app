@@ -1,16 +1,18 @@
 .keyboard-calculator {
-  height: 60vh;
-  padding: 15px;
-
+  width: 100%;
+  height: auto;
+  background-color: $color-dark-toggle;
+  border-radius: 10px;
+  padding: 18px;
   &__items {
-    height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    grid-template-rows: repeat(auto-fill, 20%);
     grid-auto-flow: row;
     justify-items: center;
-    background-color: $color-dark-toggle;
     gap: 15px;
-    border-radius: 10px;
+    &--actions {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 18px;
+    }
   }
 }
