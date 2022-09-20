@@ -7,9 +7,11 @@ import { KeyboardCalculator } from '../../components/organisms/KeyboardCalculato
 export const Calculator = () => {
   return (
     <div className='calculator'>
-      <Header />
-      <InputResult />
-      <KeyboardCalculator />
+      <div className='calculator__container'>
+        <Header />
+        <InputResult />
+        <KeyboardCalculator />
+      </div>
     </div>
   );
 };
