@@ -11,6 +11,6 @@ export const ButtonCustom = ({name, onClick, type}) => {
 ButtonCustom.propTypes = {
   key: PropTypes.any,
   name: PropTypes.string,
-  onClick: PropTypes.string,
+  onClick: PropTypes.func,
   type: PropTypes.string
 };

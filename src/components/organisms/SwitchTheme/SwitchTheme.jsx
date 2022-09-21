@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { Switch } from '../../atoms/Switch/Switch';
-
-import PropTypes from 'prop-types';
 
 export const SwitchTheme = ({ themes }) => {
   const [theme, setTheme] = useState(1);
