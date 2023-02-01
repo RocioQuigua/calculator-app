@@ -75,7 +75,7 @@ export const items = [
     type: 'default',
   },
   {
-    key: 'x',
+    key: '*',
     name: 'x',
     type: 'default',
   },
