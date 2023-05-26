@@ -4,7 +4,7 @@
     background-color: $color-dark-main;
     font-family: $font-family;
     font-size: 32px;
-    input {
+  .result {
       display: block;
       text-align: end;
       font-weight: 700;
@@ -16,5 +16,19 @@
       color: $color-white;
       outline: none;
       padding: 20px;
+      &--light {
+        background-color:  $color-light-screen;
+        color: $color-dark-yellow;
+      }
+      &--dark {
+        background-color: $color-violet-toggle;
+        color: $color-yellow;
+      }
     }
+  &--light {
+    background-color:$color-light-main;
+  }
+  &--dark {
+    background-color: $color-violet-main;
+  }
 }
