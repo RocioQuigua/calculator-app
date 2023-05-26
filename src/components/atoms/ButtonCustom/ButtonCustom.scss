@@ -11,33 +11,102 @@
   align-items: center;
   justify-content: center;
   box-sizing: content-box;
-  border: none!important;
-  &--primary {
+  border: none !important;
+  &__primary {
     background-color: $color-blue-background;
     box-shadow: 0px 3px $color-blue-shadow;
     color: $color-white;
     font-size: 18px;
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       color: $color-white !important;
       background-color: $color-blue-background-opacity;
     }
+    &--light {
+      background-color: $color-cyan-background;
+      box-shadow: 0px 3px $color-cyan-shadow;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $color-cyan-hover;
+      }
+    }
+    &--dark {
+      background-color: $color-violet-background;
+      box-shadow: 0px 3px $color-magneta-shadow;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $color-magneta-shadow;
+        box-shadow: 0px 3px $color-dark-shadow;
+      }
+    }
   }
-  &--secundary {
+  &__secundary {
     background-color: $color-red-background;
     box-shadow: 0px 3px $color-red-shadow;
     color: $color-white;
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       color: $color-white !important;
       background-color: $color-red-background-opacity;
     }
+    &--light {
+      background-color: $color-orange-toggle;
+      box-shadow: 0px 3px $color-dark-orange;
+      color: $color-white;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-white !important;
+        background-color: $color-orange-hover;
+    }
+    }
+    &--dark {
+      background-color: $color-cyan-toggle;
+      box-shadow: 0px 3px $color-soft-shadow;
+      color: $color-cyan-shadow;
+      &:hover,
+      &:active,
+      &:focus {
+      background-color: $color-soft-shadow;
+      color: $color-cyan-shadow !important;
+    }
+    }
   }
-  &--default {
+  &__default {
     background-color: $color-orange-background;
     box-shadow: 0px 3px $color-orange-shadow;
     color: $color-blue;
     font-size: 26px;
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       color: $color-blue !important;
+    }
+    &--light {
+      background-color: $color-light-yellow;
+      box-shadow: 0px 3px $color-dark-grayish;
+      color: $color-dark-yellow;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-dark-yellow !important; 
+        background-color: $color-white;
+      }
+    }
+    &--dark {
+      background-color: $color-dark-violet;
+      box-shadow: 0px 3px $color-dark-shadow;
+      color: $color-yellow;
+      &:hover,
+      &:active,
+      &:focus {
+      background-color: $color-violet-background;
+      color: $color-yellow !important;
+    }
     }
   }
 }
