@@ -10,4 +10,10 @@
     justify-content: center;
     align-items: center;
   }
+  &--light {
+    background-color:$color-light-main
+  }
+  &--dark {
+    background-color: $color-violet-main;
+  }
 }
