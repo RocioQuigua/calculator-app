@@ -12,10 +12,22 @@
     margin: 2px;
     height: 4.5vh;
   }
-  h1 {
+  &__title {
     font-weight: 700;
     color: $color-white;
     font-size: small;
     margin-top: 6vh;
+    &--light {
+      color: $color-dark-yellow;
+    }
+    &--dark {
+      color: $color-yellow;
+    }
+  }
+  &--light {
+    color: $color-dark-yellow;
+  }
+  &--dark {
+    color: $color-yellow;
   }
 }
