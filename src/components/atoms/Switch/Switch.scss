@@ -5,7 +5,7 @@
   border-radius: 50px;
   width: 12vh;
   height: 4vh;
-  &__button {
+  .button {
     background-color: $color-dark-toggle;
     border-radius: 65px;
     border: none;
@@ -15,6 +15,24 @@
     cursor: pointer;
     &--active {
       background-color: $color-red-background;
+    }
+  }
+  &--light {
+        background-color: $color-light-toggle;
+    .button {
+      background-color: $color-light-toggle;
+      &--active {
+        background-color: $color-orange-toggle;
+      }
+    }
+  }
+  &--dark {
+    background-color: $color-violet-toggle;
+    .button {
+      background-color: $color-violet-toggle;
+      &--active {
+        background-color: $color-cyan-toggle;
+      }
     }
   }
 }
