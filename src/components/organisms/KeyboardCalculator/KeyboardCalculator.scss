@@ -15,4 +15,10 @@
       margin-top: 18px;
     }
   }
+  &--light {
+    background-color: $color-light-toggle;
+  }
+  &--dark {
+    background-color: $color-violet-toggle;
+  }
 }

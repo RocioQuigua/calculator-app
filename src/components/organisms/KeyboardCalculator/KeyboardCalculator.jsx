@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { useStore } from '../../../store/useStore';
 import { ButtonCustom } from '../../atoms/ButtonCustom/ButtonCustom';
 import { items, actions } from '../../../common/utils/keyboardItems';
 
 const operations = ['+', '-', '*', '/'];
 
 export const KeyboardCalculator = ({value, setValue}) => {
+  const theme = useStore((state) => state.theme);
 
   const handleOk = (key) => { // key = 1
     let newValue = value; 
@@ -21,11 +23,25 @@ export const KeyboardCalculator = ({value, setValue}) => {
     if (operations.includes(key) && operations.includes(lastKey))
       newValue = `${value.substring(0, value.length-1)}${key}`;
     
+    if (key === 'DEL')
+      newValue = value.slice(0, -1);
+
+    if (key === 'RESET')
+      newValue = '';
+
+    if (key === '=')
+      newValue = eval(newValue);
+    
+    //crear una funcion, recibir una cadena (new value), convertir una cadena en array .split
+    //recorrer el array
+    //en cada posicion preguntar si es un numero u operacion
+    //si es una operacion toca calcular 
+
     setValue(newValue);
   };
 
   return (
-    <div className="keyboard-calculator">
+    <div className={`keyboard-calculator keyboard-calculator--${theme}`}>
       <div className='keyboard-calculator__items'>
         {items.map((item) => (
           <ButtonCustom
